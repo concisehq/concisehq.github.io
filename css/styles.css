@@ -10900,6 +10900,7 @@ header.masthead h1, header.masthead .h1 {
   background-color: #343a40;
   background: url("../assets/img/masthead.png") no-repeat center center;
   background-size: cover;
+  background-position: top;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
