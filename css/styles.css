@@ -10841,9 +10841,9 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/masthead.png") no-repeat center center;
+  background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
   background-size: cover;
-  background-position: top;
+  background-position: "top";
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
