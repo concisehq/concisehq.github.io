@@ -13,6 +13,7 @@ function joinWaitlist(input) {
       fetch(url)
         .then(response => response.text())
         .then(data => console.log(data))
+        .then(alert('Successfully joined the waitlist!'))
         .catch(error => console.error('Error:', error));
     } else {
       alert('Please enter a valid email address.');
