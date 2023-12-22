@@ -31,15 +31,11 @@
                         <div class="text-center text-white">
                             <!-- Page heading-->
                             <h1 class="mb-5">Generate more value from your streams!</h1>
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="5c5a8625-56bc-4af0-8efe-dae5ed5380d1">
+                            <form id="waitlistForm1">
                                 <!-- Email address input-->
                                 <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Join Waitlist!</button></div>
+                                    <div class="col"><input class="form-control form-control-lg" id="emailInput1" type="email" placeholder="Email Address" /></div>
+                                    <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton1" type="button" onclick="joinWaitlist('emailInput1')">Join Now!</button></div>
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
@@ -120,15 +116,11 @@
                     <div class="col-xl-6">
                         <h2 class="mb-4">Ready to get started? Join the waitlist now!</h2>
                         <!-- Signup form-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="5c5a8625-56bc-4af0-8efe-dae5ed5380d1">
+                        <form id="waitlistForm2">
                             <!-- Email address input-->
                             <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Join Now!</button></div>
+                                <div class="col"><input class="form-control form-control-lg" id="emailInput2" type="email" placeholder="Email Address" /></div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton2" type="button" onclick="joinWaitlist('emailInput2')">Join Now!</button></div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -159,6 +151,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
